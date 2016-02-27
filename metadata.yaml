@@ -1,0 +1,45 @@
+_repo: Die-Aufzeichnungen-des-Malte-Laurids-Brigge_2188
+creator:
+  author:
+    agent_name: Rilke, Rainer Maria
+    birthdate: 1875
+    deathdate: 1926
+    gutenberg_agent_id: '846'
+    url: http://www.gutenberg.org/2009/agents/846
+    wikipedia: http://en.wikipedia.org/wiki/Rainer_Maria_Rilke
+description: "The Notebooks of Malte Laurids Brigge was Rainer Maria Rilke's only\
+  \ novel. It was written while Rilke lived in Paris, and was published in 1910. The\
+  \ novel is semi-autobiographical, and is written in an expressionistic style. The\
+  \ work was inspired by Sigbjørn Obstfelder's work A Priest's Diary and Jens Peter\
+  \ Jacobsen's second novel Niels Lyhne of 1880, which traces the fate of an atheist\
+  \ in a merciless world.\nThe book was first issued in English under the title Journal\
+  \ of My Other Self.\n^ M. D. Herter Norton (tr.). New York: W. W. Norton, 1949,\
+  \ 1992. Translator's Foreword, p. 8.\n From Wikipedia (CC BY-SA)."
+gutenberg_bookshelf: DE Prosa
+gutenberg_issued: '2000-05-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '2188'
+  wikidata: Q968544
+language: de
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcsh 'Stream of consciousness fiction'
+- !lcsh 'Paris (France) -- Fiction'
+- !lcc 'PT'
+title: Die Aufzeichnungen des Malte Laurids Brigge
+url: http://www.gutenberg.org/ebooks/2188
+wikipedia:
+- https://fr.wikipedia.org/wiki/Les_Cahiers_de_Malte_Laurids_Brigge
+- https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%AB%E3%83%86%E3%81%AE%E6%89%8B%E8%A8%98
+- https://cs.wikipedia.org/wiki/Z%C3%A1pisky_Malta_Lauridse_Brigga
+- https://de.wikipedia.org/wiki/Die_Aufzeichnungen_des_Malte_Laurids_Brigge
+- https://es.wikipedia.org/wiki/Los_cuadernos_de_Malte_Laurids_Brigge
+- https://en.wikipedia.org/wiki/The_Notebooks_of_Malte_Laurids_Brigge
+- https://it.wikipedia.org/wiki/I_quaderni_di_Malte_Laurids_Brigge
+- https://uk.wikipedia.org/wiki/%D0%9D%D0%BE%D1%82%D0%B0%D1%82%D0%BA%D0%B8_%D0%9C%D0%B0%D0%BB%D1%8C%D1%82%D0%B5_%D0%9B%D1%8F%D0%B2%D1%80%D0%B8%D0%B4%D1%81%D0%B0_%D0%91%D1%80%D0%B8%D2%91%D2%91%D0%B5
+- https://uk.wikiquote.org/wiki/%D0%9D%D0%BE%D1%82%D0%B0%D1%82%D0%BA%D0%B8_%D0%9C%D0%B0%D0%BB%D1%8C%D1%82%D0%B5_%D0%9B%D1%8F%D0%B2%D1%80%D0%B8%D0%B4%D1%81%D0%B0_%D0%91%D1%80%D0%B8%D2%91%D2%91%D0%B5
+- https://oc.wikipedia.org/wiki/Los_Quas%C3%A8rns_de_Malte_Laurids_Brigge
+- https://sv.wikipedia.org/wiki/Malte_Laurids_Brigges_anteckningar
