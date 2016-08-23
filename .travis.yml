@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: TIEJ01np+sLU1UiZWSpd7T18qAuEEdrXcYJDegIK8LYIFueZX/SShFFMNnMN2xMrfSiHNfplJqRy0dB1yf3xcrj1in4Z2Lt0jnF47nSYlG+pDVm0VaouYFFYfWo8cDQtQerwWkn4qJ9NtqVEwR+PFewc1cgXjKrsnwwbQWPTQUOO5wa9xgjxXmaCQ8BcPb6TbDrkd3W/pi20NUqwiIEzKGznWnAcn5IFPey1ZdbiyULEuZ81S0dllWvidykifuSB0ET1aaq6y2Ng+IMTgETYJNTbEpLHNt6xcan5V//WX5MytmStn5zhuM37xgCLQDbh4vnSx8Pq4b27xzBSUWoPqcJQ0hZSz1/ikXfxT29JA64bYzMR7nHINSuMxHylHsaQIT0p6G8/80JQM8Dj2ekgvti8aiuutqzZgE2ZkQ+PZFRyPIW9nNiMXSUq2OgbAkGyC0Nmgmwh3C9axasVUcKDkg96JoNSIdqjfCYwcg8XS7L4ZAUmtTbT8RhPJyU+B9mjZEoEriL6Kz0yg0lo6nZ9+GmiAA4neBSt0mSEkgF7R8Q85NAGQsuJ1d/87c9427NA8PHD1odCfUKcff4oFBefFLnS+l2GbjY901AE3zVd6jZxplLqXiCrqPQrknnacwEPDUGsv9N99icC1jKDnIIPaoSIv7Ads/XrRxgSxGOlm2g=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/Die-Aufzeichnungen-des-Malte-Laurids-Brigge_2188
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
