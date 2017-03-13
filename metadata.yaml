@@ -1,5 +1,8 @@
 _repo: Die-Aufzeichnungen-des-Malte-Laurids-Brigge_2188
-_version: 0.1.0
+_version: 0.2.0
+covers:
+- cover_type: generated
+  image_path: cover.png
 creator:
   author:
     agent_name: Rilke, Rainer Maria
@@ -16,6 +19,8 @@ description: "The Notebooks of Malte Laurids Brigge was Rainer Maria Rilke's onl
   \ in a merciless world.\nThe book was first issued in English under the title Journal\
   \ of My Other Self.\n^ M. D. Herter Norton (tr.). New York: W. W. Norton, 1949,\
   \ 1992. Translator's Foreword, p. 8.\n From Wikipedia (CC BY-SA)."
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/2188#Die-Aufzeichnungen-des-Malte-Laurids-Brigge
 gutenberg_bookshelf: DE Prosa
 gutenberg_issued: '2000-05-01'
 gutenberg_type: Text
