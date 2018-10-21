@@ -1,5 +1,5 @@
 _repo: Die-Aufzeichnungen-des-Malte-Laurids-Brigge_2188
-_version: 0.2.0
+_version: 0.2.1
 covers:
 - cover_type: generated
   image_path: cover.png
@@ -35,6 +35,7 @@ subjects:
 - !lcsh 'Stream of consciousness fiction'
 - !lcsh 'Paris (France) -- Fiction'
 - !lcc 'PT'
+- GITenberg
 title: Die Aufzeichnungen des Malte Laurids Brigge
 url: http://www.gutenberg.org/ebooks/2188
 wikipedia:
